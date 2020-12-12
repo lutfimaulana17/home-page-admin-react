@@ -1,0 +1,104 @@
+.sidebar-wrapper {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFF;
+    height: 100%;
+    width: 270px;
+    
+    .image-wrapper {
+        display: flex;
+        justify-content: center;
+        padding-top: 10px;
+        padding-bottom: 5px;
+        border-bottom: 1px solid #ecf0f1;
+
+        .logo-image {
+            width: 200px;
+        }        
+    }
+
+    .wrapper-button-status {
+        background-color: #fdb816;
+        padding: 7px 80px 7px 80px;
+        text-align: center;
+        align-self: center;
+        border-radius: 15px;
+        box-shadow: 1px 1px 5px 0px rgba(182,170,170,0.75);
+        -webkit-box-shadow: 1px 1px 5px 0px rgba(182,170,170,0.75);
+        -moz-box-shadow: 1px 1px 5px 0px rgba(182,170,170,0.75);
+        
+        .text-button-status {
+            margin: 0px;
+            font-size: 14px;
+            color: #4a4a4a;
+        }
+    }
+
+    .wrapper-content-sidebar {
+        flex: 1;
+        overflow: scroll;
+
+        .wrapper-item-menu {
+            display: flex;
+            flex-direction: row;
+            padding: 15px 20px 15px 20px;
+            align-items: center;
+            cursor: pointer;
+
+            .text-item-menu {
+                margin: 0px;
+                font-size: 16px;
+                font-weight: 500;
+                color: #999;
+                flex: 1;
+            }
+
+            .active-text-menu {
+                color: #4a4a4a;
+            }
+
+
+            .icon-menu-image {
+                width: 23px;
+                object-fit: contain;
+            }
+
+            .icon-button-arrow {
+                width: 18px;
+                object-fit: contain;
+            }
+
+        }
+
+        .active-menu {
+            background-color: #f3f3fa;
+            border-right: 5px solid #6f7ed4;
+        }
+
+        .wrapper-item-submenu {
+            display: flex;
+            flex-direction: column;
+            cursor: pointer;
+
+            .text-item-menu {
+                margin: 0px;
+                font-size: 16px;
+                font-weight: 500;
+                color: #999;
+                flex: 1;
+                padding: 15px 20px 15px 50px;
+            }
+
+            .active-text-menu {
+                color: #4a4a4a;
+            }
+
+        }
+    }
+
+
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
